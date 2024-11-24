@@ -9,15 +9,16 @@ img[src="assets/images/logomakr-0zpezn-563x600.png"] {
 /* DEMO-SPECIFIC STYLES */
 .typing {
   color: #fff;
-  font-family: ;
+  font-family: system-ui;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
+  line-height: 1.2; /* 确保文字高度标准化 */
   animation: 
     typing 4s steps(30, end),
-    blink-caret .5s step-end infinite,
+    blink-caret .8s step-end infinite,
     show 1s;
   animation-delay: 0.3s;
 }
@@ -31,7 +32,7 @@ img[src="assets/images/logomakr-0zpezn-563x600.png"] {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange }
+  50% { border-color: rgb(255, 255, 255) }
 }
 
 .preload {
