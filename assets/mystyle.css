@@ -48,6 +48,14 @@ img[src="assets/images/logomakr-0zpezn-563x600.png"] {
   text-align: center;
 }
 
+/* 卡片悬停效果 */
+.card {
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
 p {
       letter-spacing: 0.5px !important;
 }
